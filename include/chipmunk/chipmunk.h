@@ -35,10 +35,12 @@
 	#endif
 #endif
 
+#define CP_EXPORT
+
+#ifdef CP_DLL
 #ifdef _WIN32
 	#define CP_EXPORT __declspec(dllexport)
-#else
-	#define CP_EXPORT
+#endif
 #endif
 
 #ifdef __cplusplus
